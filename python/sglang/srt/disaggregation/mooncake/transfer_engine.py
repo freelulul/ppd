@@ -143,12 +143,22 @@ class MooncakeTransferEngine:
         device_name: Optional[str],
     ) -> None:
         """Initialize the mooncake instance."""
+        import os
         if get_bool_env_var("ENABLE_ASCEND_TRANSFER_WITH_MOONCAKE", "false"):
             hostname += f":{get_free_port()}:npu_{self.gpu_id}"
             ret_value = self.engine.initialize(
                 hostname,
                 "P2PHANDSHAKE",
                 "ascend",
+                device_name if device_name is not None else "",
+            )
+        elif get_bool_env_var("SGLANG_MOONCAKE_USE_TCP", "false"):
+            # Use TCP transport for environments without RDMA/InfiniBand hardware
+            logger.info("Using TCP transport for Mooncake (no RDMA hardware)")
+            ret_value = self.engine.initialize(
+                hostname,
+                "P2PHANDSHAKE",
+                "tcp",
                 device_name if device_name is not None else "",
             )
         else:
