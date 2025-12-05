@@ -1,0 +1,65 @@
+[
+  {
+    "bandwidth_gbps": 0.1,
+    "local_pct": 100.0,
+    "baseline_throughput": 0.0138,
+    "adaptive_throughput": 1.0795,
+    "improvement_pct": 7728.75
+  },
+  {
+    "bandwidth_gbps": 0.5,
+    "local_pct": 99.4,
+    "baseline_throughput": 0.0689,
+    "adaptive_throughput": 1.1147,
+    "improvement_pct": 1518.91
+  },
+  {
+    "bandwidth_gbps": 1.0,
+    "local_pct": 97.02,
+    "baseline_throughput": 0.1375,
+    "adaptive_throughput": 1.2073,
+    "improvement_pct": 778.08
+  },
+  {
+    "bandwidth_gbps": 2.5,
+    "local_pct": 88.69,
+    "baseline_throughput": 0.3421,
+    "adaptive_throughput": 1.5319,
+    "improvement_pct": 347.75
+  },
+  {
+    "bandwidth_gbps": 5.0,
+    "local_pct": 81.55,
+    "baseline_throughput": 0.6789,
+    "adaptive_throughput": 1.9522,
+    "improvement_pct": 187.54
+  },
+  {
+    "bandwidth_gbps": 10.0,
+    "local_pct": 62.5,
+    "baseline_throughput": 1.3371,
+    "adaptive_throughput": 2.6189,
+    "improvement_pct": 95.87
+  },
+  {
+    "bandwidth_gbps": 25.0,
+    "local_pct": 39.29,
+    "baseline_throughput": 3.1959,
+    "adaptive_throughput": 4.3646,
+    "improvement_pct": 36.57
+  },
+  {
+    "bandwidth_gbps": 50.0,
+    "local_pct": 21.43,
+    "baseline_throughput": 5.9558,
+    "adaptive_throughput": 6.8141,
+    "improvement_pct": 14.41
+  },
+  {
+    "bandwidth_gbps": 100.0,
+    "local_pct": 7.14,
+    "baseline_throughput": 10.4819,
+    "adaptive_throughput": 10.8702,
+    "improvement_pct": 3.7
+  }
+]
